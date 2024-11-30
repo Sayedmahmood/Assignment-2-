@@ -34,15 +34,20 @@ if (json_last_error() !== JSON_ERROR_NONE) {
         table {
             width: 100%;
             border-collapse: collapse;
-            overflow: auto;
         }
         th, td {
             padding: 10px;
             text-align: left;
-            border: 1px solid #ddd;
         }
         th {
-            background-color: #f4f4f4;
+            background-color: #ffffff;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: #f7f7f7; /* Light grey */
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #ffffff; /* white */
         }
         @media (max-width: 600px) {
             th, td {
